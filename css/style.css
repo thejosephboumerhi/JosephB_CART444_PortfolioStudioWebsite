@@ -1,8 +1,18 @@
+/*All fonts are from Google Fonts*/
+/*Icon images are from https://icons8.com/icons*/
+
+/*Surface colors*/
 body {
     background-color: #FFF8F2;
 }
 
 /*Where I do things for the grid and layout of my page*/
+/*Learned how to do grid a bit from "Slaying The Dragon"*/
+/*https://youtu.be/MxEtxo_AaZ4?feature=shared*/
+/*https://youtu.be/EiNiSFIPIQE?feature=shared*/
+/*Usually when learning, I was just generally looking at MDN Docs, W3schools, and CSS-Tricks (when Elio showed me)*/
+
+/*Basic grid*/
 .container {
     display: grid;
     grid-template-rows: auto;
@@ -13,6 +23,7 @@ body {
         'footer';
 }
 
+/*Stuff for nav bar*/
 .item-1 {
     grid-area: header;
     position: fixed;
@@ -26,6 +37,7 @@ body {
     z-index: 2;
 }
 
+/*Stuff for my main contents*/
 .item-2 {
     grid-area: main;
     background-color: #F7ECDF;
@@ -41,10 +53,12 @@ body {
     padding-right: 8px;
 }
 
+/*Just have this here for when I could eventually use in the future after the semester(probably for social media, legal stuff)*/
 .item-3 {
     grid-area: footer;
 }
 
+/*For the titles of the works, is sticky to move as you scroll down*/
 h1 {
     background-color: #6C5C3F;
     color: #FFFFFF;
@@ -60,6 +74,7 @@ h1 {
     z-index: 1;
 }
 
+/*For the writing*/
 p {
     font-family: "Exo", "regular";
     font-size: 16px;
@@ -67,6 +82,7 @@ p {
     color: #261900;
 }
 
+/*For the pictures and videos*/
 .mediaRow {
    display: flex;
    justify-content: center;
@@ -74,10 +90,6 @@ p {
    width: fit-content;
    margin: auto;
    border-style: solid;
-}
-
-.imageColumn {
-    display: flex;
 }
 
 .nameTitle {
@@ -89,6 +101,7 @@ p {
     padding: 8px;
 }
 
+/*Things for buttons*/
 .topicLinks {
     text-decoration: none;
     background-color: #6C5C3F;
@@ -131,5 +144,3 @@ p {
 .iconComponent:hover {
     background-color: #FFFFFF;
 }
-
-/*Responsive Layout (for sake of time with this portfolio and other projects, I'll only make my iPhone 8 the example)*/
